@@ -22,8 +22,13 @@ public class PasswordGenerator {
         System.out.println("Inserisci l'anno della tua data di nascita");
         int ageDateOfBirthUser = input.nextInt();
 
+        int sum = dayDateOfBirthUser + monthDateOfBirthUser + ageDateOfBirthUser;
+        System.out.println(sum);
+
         System.out.println(nameUser + " " + surnameUser + ", nato il " + dayDateOfBirthUser + "/" + monthDateOfBirthUser
                 + "/" + ageDateOfBirthUser + ", il cui colore preferito è il " + colorUser);
+
+        System.out.println("La tua password sarà " + nameUser + "-" + surnameUser + "-" + colorUser + "-" + sum);
 
         input.close();
     }
