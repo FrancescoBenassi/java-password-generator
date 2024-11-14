@@ -16,11 +16,11 @@ public class PasswordGenerator {
         String colorUser = input.nextLine();
 
         System.out.println("Inserisci il giorno della tua data di nascita");
-        int dayDateOfBirthUser = input.nextInt();
+        int dayDateOfBirthUser = Integer.parseInt(input.nextLine());
         System.out.println("Inserisci il mese della tua data di nascita");
-        int monthDateOfBirthUser = input.nextInt();
+        int monthDateOfBirthUser = Integer.parseInt(input.nextLine());
         System.out.println("Inserisci l'anno della tua data di nascita");
-        int ageDateOfBirthUser = input.nextInt();
+        int ageDateOfBirthUser = Integer.parseInt(input.nextLine());
 
         int sum = dayDateOfBirthUser + monthDateOfBirthUser + ageDateOfBirthUser;
         System.out.println(sum);
